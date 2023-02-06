@@ -1,0 +1,40 @@
+/* 
+Purple #9356DC 
+Pink #FF79DA 
+Green #99E2D0 
+font-family: 'Shrikhand', cursive;
+*/
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    text-align: center;
+    vertical-align: center;
+    padding: .4em 0;
+    font-size: 7vw;
+    border-bottom: 1px solid rgb(211, 210, 210);
+    font-family: 'Shrikhand', cursive;
+}
+
+.searchForm{
+    background-color: rgb(253, 229, 221);
+    display: flex;
+    justify-content: center;
+    height: 2em;
+}
+
+.searchIcon{
+    padding: .45em;
+}
+
+.searchField{
+    width: 30vw;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 3.5vw;
+    font-weight: bold;
+}
