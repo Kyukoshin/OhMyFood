@@ -14,16 +14,19 @@ header{
     text-align: center;
     vertical-align: center;
     padding: .4em 0;
-    font-size: 7vw;
     border-bottom: 1px solid rgb(211, 210, 210);
+}
+
+.headerTitle{
     font-family: 'Shrikhand', cursive;
+    font-size: 7vw;
 }
 
 .searchForm{
     background-color: rgb(253, 229, 221);
     display: flex;
     justify-content: center;
-    height: 2em;
+    height: 9vw;
 }
 
 .searchIcon{
@@ -38,3 +41,30 @@ header{
     font-size: 3.5vw;
     font-weight: bold;
 }
+
+.titles{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+}
+.mainTitle{
+    font-size: 5vw;
+}
+
+.mainSubtitle{
+    font-size: 3vw;
+    font-weight: normal;
+}
+
+.exploreButton{
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(356deg, rgba(147,86,220,1) 25%, rgba(255,121,218,1) 100%);
+    color: white;
+    min-width: 15em;
+    min-height: 3em;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    font-weight: 500;
+}
+
