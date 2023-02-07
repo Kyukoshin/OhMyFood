@@ -18,78 +18,90 @@
     <main>
         <div class="searchForm">
             <span class="searchIcon"><i class="fa-solid fa-location-dot"></i></span>
-            <input class="searchField" type="search" placeholder="Paris, Belleville" aria-label="Text to research" size="1" />
+            <input class="searchField" type="search" placeholder="Paris, Belleville" aria-label="Zone search" size="1" />
         </div>
 
         <div class="titles">
             <h1 class="mainTitle">Réservez le menu qui vous convient</h1>
             <h3 class="mainSubtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
-            <button class="exploreButton">Explorer nos restaurants</button>
+            <a href="#restaurants"><button class="exploreButton">Explorer nos restaurants</button></a>
         </div>
 
         <div class="howTo">
-            <h2>Fonctionnement</h2>
+            <h3>Fonctionnement</h3>
             <div class="howToCard">
                 <span class="howToBubble">1</span>
                 <span class="howToIcon"><i class="fa-solid fa-mobile-screen"></i></span>
-                <span>Choisissez un restaurant</span>
+                <span class="howToText">Choisissez un restaurant</span>
             </div>
             <div class="howToCard">
                 <span class="howToBubble">2</span>
                 <span class="howToIcon"><i class="fa-solid fa-bars"></i></span>
-                <span>Composez votre menu</span>
+                <span class="howToText">Composez votre menu</span>
             </div>
             <div class="howToCard">
                 <span class="howToBubble">3</span>
                 <span class="howToIcon"><i class="fa-solid fa-store"></i></span>
-                <span>Dégustez au restaurant</span>
+                <span class="howToText">Dégustez au restaurant</span>
             </div>
         </div>
 
-        <div class="restaurantsContainer">
-            <h2>Restaurants</h2>
-            <div class="restaurantCard">
-                <img src="" alt="">
-                <span class="restaurantTag">Nouveau</span>
-                <h4 class="restaurantCardTitle">La palette du goût</h4>
-                <h5 class="restaurantCardLocation">Ménilmontant</h5>
-                <span class="restaurantCardFavorite"><i class="fa-regular fa-heart"></i></span>
-            </div>
-            <div class="restaurantCard">
-                <img src="" alt="">
-                <span class="restaurantTag">Nouveau</span>
-                <h4 class="restaurantCardTitle">La palette du goût</h4>
-                <h5 class="restaurantCardLocation">Ménilmontant</h5>
-                <span class="restaurantCardFavorite"><i class="fa-regular fa-heart"></i></span>
-            </div>
-            <div class="restaurantCard">
-                <img src="" alt="">
-                <span class="restaurantTag">Nouveau</span>
-                <h4 class="restaurantCardTitle">La palette du goût</h4>
-                <h5 class="restaurantCardLocation">Ménilmontant</h5>
-                <span class="restaurantCardFavorite"><i class="fa-regular fa-heart"></i></span>
-            </div>
-            <div class="restaurantCard">
-                <img src="" alt="">
-                <span class="restaurantTag">Nouveau</span>
-                <h4 class="restaurantCardTitle">La palette du goût</h4>
-                <h5 class="restaurantCardLocation">Ménilmontant</h5>
-                <span class="restaurantCardFavorite"><i class="fa-regular fa-heart"></i></span>
-            </div>
+        <div id="restaurants" class="restaurantsContainer">
+            <h3>Restaurants</h3>
+            <a class="seamlessLinkBlack" href="menu1.html">
+                <div class="restaurantCard">
+                    <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurantCardImage" alt="La palette du goût">
+                    <span class="restaurantTag">Nouveau</span>
+                    <h4 class="restaurantCardTitle">La palette du goût</h4>
+                    <h5 class="restaurantCardLocation">Ménilmontant</h5>
+                    <span class="restaurantCardFavorite"><i class="fa-regular fa-heart"></i></span>
+                </div>
+            </a>
+            <a class="seamlessLinkBlack" href="menu2.html">
+                <div class="restaurantCard">
+                    <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="restaurantCardImage" alt="La note enchantée">
+                    <span class="restaurantTag">Nouveau</span>
+                    <h4 class="restaurantCardTitle">La note enchantée</h4>
+                    <h5 class="restaurantCardLocation">Charonne</h5>
+                    <span class="restaurantCardFavorite"><i class="fa-regular fa-heart"></i></span>
+                </div>
+            </a>
+            <a class="seamlessLinkBlack" href="menu2.html">
+                <div class="restaurantCard">
+                    <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="restaurantCardImage" alt="À la française">
+                    <span class="restaurantTag">Nouveau</span>
+                    <h4 class="restaurantCardTitle">À la française</h4>
+                    <h5 class="restaurantCardLocation">Cité Rouge</h5>
+                    <span class="restaurantCardFavorite"><i class="fa-regular fa-heart"></i></span>
+                </div>
+            </a>
+            <a class="seamlessLinkBlack" href="menu4.html">
+                <div class="restaurantCard">
+                    <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="restaurantCardImage" alt="Le délice des sens">
+                    <span class="restaurantTag">Nouveau</span>
+                    <h4 class="restaurantCardTitle">Le délice des sens</h4>
+                    <h5 class="restaurantCardLocation">Folie-Méricourt</h5>
+                    <span class="restaurantCardFavorite"><i class="fa-regular fa-heart"></i></span>
+                </div>
+            </a>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <h2 class="footerTitle">ohmyfood</h2>
-        <div>
-            <span><i class="fa-solid fa-utensils"></i></i></span>
-            <h6>Proposer un restaurant</h6>
-        </div>
-        <div>
-            <span><i class="fa-solid fa-handshake-angle"></i></span>
-            <h6>Devenir partenaire</h6>
-        </div>
-        <h6>Mentions légales</h6>
-        <h6>Contact</h6>
+        <a class="footerLink" href="">
+            <div class="inlineFooterItem">
+                <span class="footerIcon"><i class="fa-solid fa-utensils fa-2xs"></i></i></span>
+                <h6>Proposer un restaurant</h6>
+            </div>
+        </a>
+        <a class="footerLink" href="">
+            <div class="inlineFooterItem">
+                <span class="footerIcon"><i class="fa-solid fa-handshake-angle fa-2xs"></i></span>
+                <h6>Devenir partenaire</h6>
+            </div>
+        </a>
+        <a class="footerLink" href=""><h6>Mentions légales</h6></a>
+        <a class="footerLink" href=""><h6>Contact</h6></a>
     </footer>
 </body>
 </html>
