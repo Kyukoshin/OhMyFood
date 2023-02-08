@@ -81,12 +81,19 @@ font-family: 'Shrikhand', cursive;
     margin-top: 1.5em;
 }
 
+.mainContainer{
+    max-width: 80em;
+    margin: auto;
+}
+
 .howTo{
     margin-top: 3em;
-    display: flex;
-    flex-flow: column;
     padding: 0 1em;
-    max-width: 25em;
+    max-width: 18em;
+}
+
+.howToContainer{
+    display: grid;
 }
 
 .howToCard{
@@ -415,6 +422,20 @@ font-family: 'Shrikhand', cursive;
 }
 
 @media only screen and (min-width: 1000px) {
+    .howTo{
+        max-width: none;
+    }
+    .howToContainer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1em;
+    } 
+    .restaurantCardsContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1em;
+    }
     .menuCoursesContainer{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
