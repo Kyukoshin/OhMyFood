@@ -142,7 +142,6 @@ font-family: 'Shrikhand', cursive;
     box-shadow: rgb(0 0 0 / 30%) 0px 3px 10px;
     border-radius: 15px;
     background-color: #ececec;
-    max-width: 600px;
 }
 
 .restaurantCard:hover{
@@ -164,8 +163,7 @@ font-family: 'Shrikhand', cursive;
     color: green;
     padding: 0.5em;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: auto;
     width: 66px;
     height: 18px;
     grid-area: 1 / 2 / 2 / 3;
@@ -190,6 +188,7 @@ font-family: 'Shrikhand', cursive;
 .restaurantCardFavorite{
     grid-area: 3 / 2 / 5 / 3;
     padding: 2em 2em;
+    margin: auto;
 }
 
 .restaurantCardFavorite:hover{
@@ -248,11 +247,14 @@ font-family: 'Shrikhand', cursive;
 }
 
 .menuContainer{
-    border-radius: 45px 45px 0 0;
+    border-radius: 45px;
+    margin: auto;
     margin-top: -3em;
     background-color: #f7f7f7;
     opacity: 1;
     position: relative;
+    max-width: 80em;
+    box-shadow: 0 0 10px rgb(197 197 197);
 }
 
 .menuTitle{
@@ -299,6 +301,13 @@ font-family: 'Shrikhand', cursive;
     50% { opacity: .7; margin-top: 0;}
     100% { opacity: 1; margin-top: 0;}
 }
+
+@keyframes fadeInDesktop {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+
 
 .delay1{
     animation-delay: 0.2s;
@@ -403,5 +412,17 @@ font-family: 'Shrikhand', cursive;
     transform: rotate(-360deg); 
     transition: transform 300ms ease-in-out;
     color: white;   
+}
+
+@media only screen and (min-width: 1000px) {
+    .menuCoursesContainer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1em;
+    }
+    .menuItem{
+        transform-origin: center;
+        animation: fadeInDesktop 1.5s forwards;
+    }
 }
 
