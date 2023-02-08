@@ -243,8 +243,8 @@ font-family: 'Shrikhand', cursive;
 
 .topBanner{
     object-fit: cover;
-    min-height: 15em;
-    max-height: 30em;
+    min-height: 12em;
+    max-height: 20em;
     width: 100%;
 }
 
