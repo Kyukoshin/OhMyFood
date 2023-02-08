@@ -304,8 +304,8 @@ font-family: 'Shrikhand', cursive;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; margin-top: 3em;}
-    50% { opacity: .7; margin-top: 0;}
+    0% { opacity: 0; margin-top: 1em;}
+    50% { opacity: .7; margin-top: .5em;}
     100% { opacity: 1; margin-top: 0;}
 }
 
