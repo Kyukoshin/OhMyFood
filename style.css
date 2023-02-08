@@ -290,7 +290,6 @@ font-family: 'Shrikhand', cursive;
     margin: 1rem 0;
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
     overflow: hidden;
-    max-width: 350px;
 }
 
 .menuItemDetails{
@@ -346,29 +345,32 @@ font-family: 'Shrikhand', cursive;
 
 .menuItemMainContent{
     overflow: hidden;
+    flex: 1;
 }
 
 .menuItemRoller{
     background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1.4rem;
-    width: 4rem;
+    margin: -1em;
+    margin-left: 1em;
+    margin-right: -3em;
+    width: 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
     transition-duration: .5s;
+    padding-left: 1.5em;
 }
 
 .menuItem:hover .checkRoll{
-    transform: rotate(0deg);
+    transform: rotate(0deg);    
 }
 
 .menuItem:hover .menuItemRoller{
-    margin: -1rem -5rem -1rem -2.7rem;
+    width: 5.5em;
 }
 
 .checkRoll{
-    transform: rotate(-360deg);
-    transition: transform 300ms ease-in;
-    color: white;
+    transform: rotate(-360deg); 
+    transition: transform 300ms ease-in-out;
+    color: white;   
 }
 
