@@ -194,8 +194,35 @@ font-family: 'Shrikhand', cursive;
 
 .restaurantCardFavorite{
     grid-area: 3 / 2 / 5 / 3;
-    padding: 2em 2em;
     margin: auto;
+    display: grid;
+}
+
+.emptyFavorite{
+    height: 32px;
+    width: 32px;
+    padding-top: -56px;
+    position: relative;
+    top: 32px;
+    opacity: 1;
+}
+
+.purpleFavorite{
+    opacity: 0;
+    width: 32px;
+    height: 30px;
+    position: relative;
+    padding-top: 16px;
+    margin-top: -16px;
+    top: 0px;
+}
+
+.purpleFavorite:hover{
+    opacity: 1;
+    transition-duration: 300ms;
+    background: linear-gradient(360deg, rgba(147,86,220,1) 25%, rgba(255,121,208,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .restaurantCardFavorite:hover{
