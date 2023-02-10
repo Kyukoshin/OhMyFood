@@ -25,7 +25,8 @@ font-family: 'Shrikhand', cursive;
 
 @keyframes homeLand {
     80% { opacity: .85;}
-    100% { opacity: 0;}
+    99% { opacity: 0; width: 100%;}
+    100% { opacity: 0; width: 0px;}
 }
 
 .container {
