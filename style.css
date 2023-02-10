@@ -225,6 +225,24 @@ font-family: 'Shrikhand', cursive;
     -webkit-text-fill-color: transparent;
 }
 
+.emptyMenuFavorite{
+    height: 32px;
+    width: 32px;
+    padding-top: -56px;
+    position: relative;
+    margin-right: -32px;
+    opacity: 1;
+}
+
+.purpleMenuFavorite:hover{
+    opacity: 1;
+    transition-duration: 300ms;
+    background: linear-gradient(360deg, rgba(147,86,220,1) 25%, rgba(255,121,208,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 .restaurantCardFavorite:hover{
     opacity: 1;
     transition-duration: 1000ms;
