@@ -270,6 +270,7 @@ font-family: 'Shrikhand', cursive;
     padding: 0.5em;
     border-radius: 5px;
     margin: auto;
+    margin-right: 1em;
     width: 66px;
     height: 18px;
     grid-area: 1 / 2 / 2 / 3;
