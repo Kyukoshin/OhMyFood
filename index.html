@@ -26,7 +26,7 @@
                 <defs>
                   <filter id="goo">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
                   </filter>
                 </defs>
               </svg>
@@ -39,19 +39,19 @@
     </header>
 
     <main>
-        <div class="searchForm">
+        <header class="searchForm">
             <span class="searchIcon"><i class="fa-solid fa-location-dot"></i></span>
-            <input class="searchField" type="search" placeholder="Paris, Belleville" aria-label="Zone search" size="1" />
-        </div>
+            <input class="searchField" type="search" placeholder="Paris, Belleville" aria-label="Zone search" size="1">
+        </header>
 
         <div class="titles">
             <h1 class="mainTitle">Réservez le menu qui vous convient</h1>
-            <h3 class="mainSubtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
-            <a href="#restaurants"><button class="exploreButton">Explorer nos restaurants</button></a>
+            <h2 class="mainSubtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
+            <a class="exploreButton" href="#restaurants">Explorer nos restaurants</a>
         </div>
             <div class="mainContainer">
-                <div class="howTo">
-                    <h3>Fonctionnement</h3>
+                <section class="howTo">
+                    <h2>Fonctionnement</h2>
                         <div class="howToContainer">
                             <div class="howToCard">
                                 <span class="howToBubble">1</span>
@@ -69,66 +69,68 @@
                                 <span class="howToText">Dégustez au restaurant</span>
                             </div>
                         </div>
-                </div>
+                    </section>
 
-                <div id="restaurants" class="restaurantsContainer">
-                    <h3>Restaurants</h3>
+                <section id="restaurants" class="restaurantsContainer">
+                    <h2>Restaurants</h2>
                         <div class="restaurantCardsContainer">
                             <a class="seamlessLinkBlack" href="menu1.html">
-                                <div class="restaurantCard">
+                                <article class="restaurantCard">
                                     <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurantCardImage" alt="La palette du goût">
                                     <span class="restaurantTag">Nouveau</span>
-                                    <h4 class="restaurantCardTitle">La palette du goût</h4>
-                                    <h5 class="restaurantCardLocation">Ménilmontant</h5>
+                                    <h3 class="restaurantCardTitle">La palette du goût</h3>
+                                    <h4 class="restaurantCardLocation">Ménilmontant</h4>
                                     <div class="restaurantCardFavorite"><i class="fa-regular fa-heart fa-2xl emptyFavorite"></i><i class="fa-solid fa-heart fa-2xl purpleFavorite"></i></div>
-                                </div>
+                                </article>
                             </a>
                             <a class="seamlessLinkBlack" href="menu2.html">
-                                <div class="restaurantCard">
+                                <article class="restaurantCard">
                                     <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="restaurantCardImage" alt="La note enchantée">
                                     <span class="restaurantTag">Nouveau</span>
-                                    <h4 class="restaurantCardTitle">La note enchantée</h4>
-                                    <h5 class="restaurantCardLocation">Charonne</h5>
+                                    <h3 class="restaurantCardTitle">La note enchantée</h3>
+                                    <h4 class="restaurantCardLocation">Charonne</h4>
                                     <div class="restaurantCardFavorite"><i class="fa-regular fa-heart fa-2xl emptyFavorite"></i><i class="fa-solid fa-heart fa-2xl purpleFavorite"></i></div>
-                                </div>
+                                </article>
                             </a>
                             <a class="seamlessLinkBlack" href="menu3.html">
-                                <div class="restaurantCard">
+                                <article class="restaurantCard">
                                     <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="restaurantCardImage" alt="À la française">                    
-                                    <h4 class="restaurantCardTitle">À la française</h4>
-                                    <h5 class="restaurantCardLocation">Cité Rouge</h5>
+                                    <h3 class="restaurantCardTitle">À la française</h3>
+                                    <h4 class="restaurantCardLocation">Cité Rouge</h4>
                                     <div class="restaurantCardFavorite"><i class="fa-regular fa-heart fa-2xl emptyFavorite"></i><i class="fa-solid fa-heart fa-2xl purpleFavorite"></i></div>
-                                </div>
+                                </article>
                             </a>
                             <a class="seamlessLinkBlack" href="menu4.html">
-                                <div class="restaurantCard">
+                                <article class="restaurantCard">
                                     <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="restaurantCardImage" alt="Le délice des sens">                    
-                                    <h4 class="restaurantCardTitle">Le délice des sens</h4>
-                                    <h5 class="restaurantCardLocation">Folie-Méricourt</h5>
+                                    <h3 class="restaurantCardTitle">Le délice des sens</h3>
+                                    <h4 class="restaurantCardLocation">Folie-Méricourt</h4>
                                     <div class="restaurantCardFavorite"><i class="fa-regular fa-heart fa-2xl emptyFavorite"></i><i class="fa-solid fa-heart fa-2xl purpleFavorite"></i></div>
-                                </div>
+                                </article>
                             </a>
                         </div>
-                </div>
+                    </section>
             </div>            
     </main>
 
     <footer class="footer">
-        <h2 class="footerTitle">ohmyfood</h2>
-        <a class="footerLink" href="">
-            <div class="inlineFooterItem">
-                <span class="footerIcon"><i class="fa-solid fa-utensils fa-2xs"></i></i></span>
-                <h6>Proposer un restaurant</h6>
-            </div>
-        </a>
-        <a class="footerLink" href="">
-            <div class="inlineFooterItem">
-                <span class="footerIcon"><i class="fa-solid fa-handshake-angle fa-2xs"></i></span>
-                <h6>Devenir partenaire</h6>
-            </div>
-        </a>
-        <a class="footerLink" href=""><h6>Mentions légales</h6></a>
-        <a class="footerLink" href="mailto:email@example.com"><h6>Contact</h6></a></a>
+        <div class="footerContainer">
+            <h1 class="footerTitle">ohmyfood</h1>
+            <a class="footerLink" href="">
+                <div class="inlineFooterItem">
+                    <span class="footerIcon"><i class="fa-solid fa-utensils fa-2xs"></i></span>
+                    <h2>Proposer un restaurant</h2>
+                </div>
+            </a>
+            <a class="footerLink" href="">
+                <div class="inlineFooterItem">
+                    <span class="footerIcon"><i class="fa-solid fa-handshake-angle fa-2xs"></i></span>
+                    <h2>Devenir partenaire</h2>
+                </div>
+            </a>
+            <a class="footerLink" href=""><h2>Mentions légales</h2></a>
+            <a class="footerLink" href="mailto:email@example.com"><h2>Contact</h2></a>
+        </div>
     </footer>
 
 </body>
