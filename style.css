@@ -10,6 +10,16 @@ font-family: 'Shrikhand', cursive;
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+}
+
+main{
+    flex: 1;
+}
+
 .loader{
     display: flex;
     justify-content: center;
@@ -352,10 +362,13 @@ font-family: 'Shrikhand', cursive;
     flex-flow: column;
     padding: 1em;
     margin-top: 3em;
+    bottom: 0;
 }
 
 .footerContainer{
+    width: 100%;
     max-width: 80em;
+    margin: auto;
 }
 
 .footerTitle{
