@@ -198,11 +198,15 @@ main{
 .howTo{
     margin-top: 3em;
     padding: 0 1em;
-    max-width: 18em;
 }
 
 .howToContainer{
     display: grid;
+}
+
+.centerWrapper{
+    margin: auto;
+    display: flex;
 }
 
 .howToCard{
@@ -473,8 +477,6 @@ main{
     100% { opacity: 1;}
 }
 
-
-
 .delay1{
     animation-delay: 0.2s;
 }
@@ -607,6 +609,10 @@ main{
     .menuItem{
         transform-origin: center;
         animation: fadeInDesktop 1.5s forwards;
+    }
+    .centerWrapper{
+        margin: 0;
+        display: flex;
     }
 }
 
